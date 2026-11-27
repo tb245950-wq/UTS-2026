@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Prodi | SIAKAD</title>
+  <link rel="stylesheet" href="../assets/css/programs.css">
+  <script defer src="../assets/js/programs-data.js"></script>
+  <script defer src="../assets/js/programs.js"></script>
+</head>
+<body data-mode="update">
+  <header class="topbar">
+    <button id="menu-open" class="button menu-toggle" type="button" aria-label="Buka menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="brand mobile-brand" href="index.html"><span class="logo" aria-hidden="true">◇</span><strong>SIAKAD</strong></a>
+    <nav class="breadcrumbs" aria-label="Lokasi halaman"><a href="index.html">Manajemen Program Studi</a><span>/</span><a href="index.html">Daftar Prodi</a><span>/</span><strong aria-current="page">Edit</strong></nav>
+    <div class="account"><span>admin@kampus.ac.id</span><span class="avatar" aria-hidden="true">A</span></div>
+  </header>
+  <button class="backdrop" id="menu-backdrop" type="button" aria-label="Tutup menu" hidden></button>
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-brand">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true">◇</span><span><strong>SIAKAD</strong><small>Sistem Akademik Prodi</small></span></a>
+      <button id="menu-close" class="button menu-toggle" type="button" aria-label="Tutup menu">×</button>
+    </div>
+    <nav class="sidebar-nav" aria-label="Menu utama">
+      <p>MENU UTAMA</p>
+      <a class="nav-item" href="../lecturers/index.html">Manajemen Dosen</a>
+      <a class="nav-item active" href="index.html">Manajemen Program Studi</a>
+      <a class="nav-sub selected" href="index.html">Daftar Prodi</a>
+      <a class="nav-sub" href="create.html">Tambah Prodi</a>
+      <a class="nav-item" href="../courses/index.html">Manajemen Mata Kuliah</a>
+    </nav>
+    <div class="sidebar-bottom"><p>AKUN</p><a class="nav-item" href="../index.html">〈 Keluar</a></div>
+  </aside>
+  <main>
+    <div class="page-heading">
+      <div><h1>Edit Prodi</h1><p id="description">Perbarui data program studi</p></div>
+
+    </div>
+    <p class="feedback" id="notice" role="status" hidden></p>
+    <div id="content">
+
+<section class="panel form-panel">
+  <h2>Form Edit Program Studi</h2>
+  <form id="record-form">
+
+    <label for="name">Nama Program Studi <span class="required">*</span></label>
+    <input id="name" name="name" required maxlength="100" aria-describedby="name-hint" placeholder="Contoh: Teknik Informatika">
+    <p class="hint" id="name-hint">Masukkan 5–100 karakter.</p>
+    <p id="form-error" class="feedback error" role="alert" hidden></p>
+    <div class="form-footer">
+      <p><span class="required">*</span> Wajib diisi</p>
+      <div class="actions">
+        <a class="button" id="cancel" href="index.html">Batal</a>
+        <button class="button primary" type="submit">Simpan Perubahan</button>
+      </div>
+    </div>
+  </form>
+</section>
+    </div>
+  </main>
+</body>
+</html>
